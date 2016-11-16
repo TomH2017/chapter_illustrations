@@ -1,81 +1,146 @@
-.bookcover{
-	background-image: url(../images/cityscape.jpg);
-	background-size: cover;
-	width:100%;
-	height:1080px;
-	background-position: 90% 50%;
-	background-attachment: fixed;
-	position: relative;
-	z-index: 3;
+body {
+    color: white;
 }
-
+.bookcover {
+    background-image: url(../images/London.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 1080px;
+    background-position: 90% 50%;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 3;
+}
 .main {
-	width: 60%;
-	float: left;
-	position: relative;
-	text-align: center;
+    width: 60%;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
 }
-
-.Beeston {width: 25%;
-	float: right;
+.maincontent {
+    width: 60%;
+    margin: auto;
+    float: left;
+    position: relative;
+    text-align: center;
+    color: white;
 }
-
-nav { text-align: center;
+.other {
+    display: block;
+    position: relative;
+    float: right;
+    width: 39%;
+    z-index: 4;
 }
-
-
-
-h1 {font-family: 'Architects Daughter', cursive; font-size: 72px; text-align: center;
+.images {
+    margin: 0 auto;
+    display: block;
+    width: 95%;
+    height: auto;
+    position: relative;
+    z-index: 5;
 }
-
-h2 {font-family: 'Amatic SC', cursive; font-size: 48px; text-align: center;
+nav {
+    text-align: center;
 }
-
-h3 {font-family: 'Amatic SC', cursive; font-size: 28px; text-align: center;
-margin-bottom: 50px;
+q {
+    font-style: italic;
 }
-img {width: 100%
+h1 {
+    margin-top: 10px;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 72px;
+    text-align: center;
 }
-
-nav li {display: inline-block;
-	border: 2px;
-	border-color: blue;
-	border-style: solid;
-	margin-right: 10px;
-
+h2 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 48px;
+    text-align: center;
 }
-
-footer { clear: right; }
-
-
+h3 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 50px;
+}
+img {
+    width: 100%
+}
+nav li {
+    display: inline-block;
+    border: 2px;
+    border-color: blue;
+    border-style: solid;
+    margin-right: 10px;
+}
+footer {
+    font-size: small;
+    clear: right;
+}
 .video-container {
-   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/35376/bg-3.jpg);//fallback-image while video loads
-  background-size: cover;
-	display: block;
-	width: 100%;
-	height: 100%;
-  position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 0;
-	-webkit-backface-visibility: hidden;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/35376/bg-3.jpg);
+    
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    -webkit-backface-visibility: hidden;
 }
-
 .touch .video-container {
-	display: none;
+    display: none;
 }
-
 #bg-video {
-  display:block;
-  min-height: 100%;
-  min-width: 100%;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 0;
-  overflow: hidden;
+    display: block;
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+.lt-ie8 .video-container {
+    display: none;
+}
+.bookcover2 {
+    background-image: url(../images/vforvendettaoscarwilde.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 1080px;
+    background-position: 100% 50%;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 3;
+    margin-top: 2160px;
 }
 
-.lt-ie8 .video-container {
-	display: none;
+.text-js{
+  opacity: 0;
+}
+.cursor{
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: -5px;
+  width: 2px;
+  /* Change colour of Cursor Here */
+  background-color: white;
+  z-index: 3;
+  animation: flash 0.5s none infinite alternate;
+}
+@keyframes flash{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
 }
